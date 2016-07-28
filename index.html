@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Caleb</title>
+  <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+<h1>Hi my name is Caleb<h1>
+<p>My favorite sport is tennis<p>
+<p>I like playing Minecraft<p>
+<p>Press the left button to see a paragrah about why i like playing Minecraft<p>
+<p>Press the middle button to see a paragrah about Me/Caleb<p>
+<p>Press the right button to see a paragrah about why i like to play tennis<p>
+<p>There is also links to io games that I (Caleb) knows<p>
+	<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Minecraft')">Minecraft</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Caleb')">Caleb</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Tennis')">Tennis</a></li>
+</ul>
+
+<div id="Minecraft" class="tabcontent">
+  <h3>Minecraft</h3>
+  <p>Minecraft is my favorite game because you can battle you also can mine ore and play on servers. A server has mini games that you can play. In 1.9 and 1.10 axes are better. .</p>
+</div>
+
+<div id="Caleb" class="tabcontent">
+  <h3>Caleb</h3>
+  <p>Me (Caleb) likes to do lots of things. From the backround You see that I like spaceships. I like to eat fruits such as Mango, Apple, Peach and Kiwi. When I get exited I get overjoyed. My birthbay is September 24. I like online games such as Diep.io, Slither.io, Wings.io, Supersnake.io,Agar.io and Feedy.io/Agar.la.</p>
+  <a href = "http://slither.io/">
+    <p>Click here for slither.io</p>
+  </a>
+  <a href = "http://diep.io/">
+  <p>Click here for diep.io</p>
+</a>
+<a href = "http://supersnake.io/">
+  <p>Click here for supersnke.io<p>
+</a>
+<a href = "http://agar.io/">
+<p>Click here for agar.io<p>
+</a>
+</div>
+
+<div id="Tennis" class="tabcontent">
+  <h3>Tennis</h3>
+  <p>I like tennis because tennis inculds a ball and a racket. Its also my favorite because you hit the ball till you miss the ball.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
